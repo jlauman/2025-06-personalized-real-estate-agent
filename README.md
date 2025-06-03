@@ -1,2 +1,11 @@
-# 2025-06-personalized-real-estate-agent
-Personalized Real Estate Agent Project
+# Personalized Real Estate Agent Project
+
+```
+python3 --version
+Python 3.13.3
+
+python3 -m venv venv
+source venv/bin/activate
+
+pip install -r requirements.txt
+```

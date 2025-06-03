@@ -21,14 +21,13 @@ class Home(BaseModel):
     bathroom_count: int = Field(description="number of bathrooms")
     home_description: str = Field(description="description of the house")
     area_description: str = Field(description="description of the neighborhood")
-    # front_photo_url: str = Field(description="image download url for the front photo of the house")
 
 
 def main():
     model = ChatOpenAI(model="o4-mini")
 
     query = """
-    Generate a list of 2 homes typical for an urban and suburban area of 1 million people.
+    Generate a list of 3 homes typical for an urban and suburban area of 1 million people.
     The home prices should range from $250k to $750k.
     The description of the house should be at least 3 sentences and include a description of the kitchen, bedrooms, and overall finish of the house.
     The description of the neighborhood should be at least 2 sentences and include surrounding businesses and access to public transportation.
@@ -37,7 +36,7 @@ def main():
     parser = JsonOutputParser(pydantic_object=Home)
 
     prompt = PromptTemplate(
-        template="Answer the query.\n{format_instructions}\n{query}\n",
+        template="Answer the query like a helpful real estate agent.\n{format_instructions}\n{query}\n",
         input_variables=["query"],
         partial_variables={"format_instructions": parser.get_format_instructions()},
     )
@@ -47,7 +46,7 @@ def main():
     output = chain.invoke({"query": query})
 
     pprint(output)
-    with open("homes.json", "w") as file:
+    with open("home_profiles.json", "w") as file:
         json.dump(output, file)
 
 
