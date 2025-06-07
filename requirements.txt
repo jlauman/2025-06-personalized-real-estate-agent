@@ -4,4 +4,5 @@ langchain-openai~=0.3
 langchain-community~=0.3.24
 chromadb~=1.0
 httpx~=0.28.1
+jq~=1.8
 pyright~=1.1
