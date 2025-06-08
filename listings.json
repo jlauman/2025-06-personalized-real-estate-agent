@@ -1,0 +1,222 @@
+[
+    {
+        "record_uuid": "d1f29484-8b3e-4bfa-bd65-b4a3e9075b5b",
+        "price_us_dollars": 325000,
+        "lot_size_acres": 0.1,
+        "house_size_sq_ft": 1500,
+        "bedroom_count": 3,
+        "bathroom_count": 2,
+        "home_description": "This charming condo offers an inviting living area with large windows that welcome in natural light. The modern kitchen features granite countertops, stainless steel appliances, and a cozy breakfast bar. The three bedrooms are well-sized, with the master bedroom boasting an en-suite bathroom. The unit includes a finished basement that can be used as a recreational room or home office. The exterior of the condo complex is well-maintained, featuring landscaped gardens and a communal pool. The condo's overall finish is contemporary, with high-quality materials used throughout.",
+        "best_description": "The condo features a modern kitchen with granite countertops and stainless steel appliances.",
+        "area_description": "This condo is located in a bustling urban neighborhood known for its trendy cafes, boutique shops, and vibrant nightlife. It's within walking distance to a highly-rated elementary school and a community park. The area is well-serviced by public transportation, with bus stops and a metro station nearby, and easy access to major highways for commuters."
+    },
+    {
+        "record_uuid": "f1a7f2c1-8e5d-4e4b-b91c-3b69d5d3d2a6",
+        "price_us_dollars": 410000,
+        "lot_size_acres": 0.2,
+        "house_size_sq_ft": 1800,
+        "bedroom_count": 4,
+        "bathroom_count": 3,
+        "home_description": "This spacious townhome offers a comfortable layout with an open-plan living area that flows seamlessly into the dining and kitchen spaces. The kitchen is a chef's dream with ample cabinetry, a large island, and high-end appliances. Four bedrooms provide plenty of space for a growing family, with the master suite featuring a luxurious bathroom. The finished basement offers additional living space and storage. The exterior includes a private patio and a small garden area, perfect for outdoor gatherings. The townhome is finished with elegant hardwood floors and modern fixtures.",
+        "best_description": "The kitchen is a chef's dream with ample cabinetry, a large island, and high-end appliances.",
+        "area_description": "Located in a family-friendly suburban area, this townhome is close to top-rated public and private schools. The neighborhood offers a variety of shopping centers and dining options. Public parks and trails are just a short walk away, providing ample opportunities for outdoor activities. The area has excellent public transportation links and is near major highways for convenient commuting."
+    },
+    {
+        "record_uuid": "a9e3f7b2-3c5e-4d77-8a2d-1b6c6d6d6b7c",
+        "price_us_dollars": 695000,
+        "lot_size_acres": 0.3,
+        "house_size_sq_ft": 2400,
+        "bedroom_count": 5,
+        "bathroom_count": 4,
+        "home_description": "This elegant single-family home features a spacious and light-filled living room with a fireplace, perfect for cozy family evenings. The gourmet kitchen is equipped with custom cabinetry, a pantry, and top-of-the-line appliances. With five bedrooms, the home provides ample space and privacy, including a master suite with a walk-in closet and spa-like bathroom. The basement is fully finished and includes a media room and gym area. The beautifully landscaped yard is complemented by a large deck, ideal for entertaining. The home's quality craftsmanship is evident in its high-end finishes and attention to detail.",
+        "best_description": "The gourmet kitchen is equipped with custom cabinetry, a pantry, and top-of-the-line appliances.",
+        "area_description": "Situated in a prestigious suburban neighborhood, this home is within close proximity to exclusive country clubs and golf courses. The area is known for its excellent schools and family-oriented community events. Residents enjoy easy access to a variety of shopping plazas and fine dining establishments, as well as nearby commuter rail stations and highways for hassle-free travel to the city."
+    },
+    {
+        "record_uuid": "c3e7d9f4-5a8f-4c4e-8a8b-2a9f7d8d5c6e",
+        "price_us_dollars": 275000,
+        "lot_size_acres": 0.05,
+        "house_size_sq_ft": 1200,
+        "bedroom_count": 2,
+        "bathroom_count": 2,
+        "home_description": "This cozy urban townhome features a welcoming open-concept living area with sleek hardwood floors. The compact yet functional kitchen includes modern appliances and plenty of counter space. Two comfortable bedrooms provide a peaceful retreat, with the master bedroom having its own private bathroom. The home includes a partially finished basement that can be customized to fit your needs. Outside, the home offers a small patio area perfect for enjoying a morning coffee. The townhome is stylishly finished with contemporary decor and energy-efficient fixtures.",
+        "best_description": "The living area features sleek hardwood floors and an open-concept layout.",
+        "area_description": "Located in a vibrant urban setting, this townhome is surrounded by cultural attractions, museums, and performing arts centers. It's a stones throw away from major universities and tech hubs, making it ideal for professionals and students alike. The neighborhood offers excellent public transportation options, including buses and metro lines, and is conveniently located near major highways for easy travel."
+    },
+    {
+        "record_uuid": "8cb857d3-c398-4a6f-9b49-3c90b0c4f8d1",
+        "price_us_dollars": 275000,
+        "lot_size_acres": 0.15,
+        "house_size_sq_ft": 1500,
+        "bedroom_count": 3,
+        "bathroom_count": 2,
+        "home_description": "This charming single-family home features a spacious living area with hardwood floors and abundant natural light. The kitchen is equipped with modern stainless steel appliances, granite countertops, and custom cabinetry. The three bedrooms offer generous closet space and plush carpeting. The finished basement provides additional living space, perfect for a home office or recreation room. The exterior boasts a well-manicured lawn, a private backyard, and a cozy patio for outdoor entertaining. Overall, the home boasts a contemporary finish with attention to detail in every corner.",
+        "best_description": "The finished basement provides additional living space, perfect for a home office or recreation room.",
+        "area_description": "Located in a thriving suburban community, this home is within walking distance to local shops and restaurants. The area is served by highly-rated schools and is known for its family-friendly environment. Convenient access to major highways and public transportation makes commuting to the city center a breeze."
+    },
+    {
+        "record_uuid": "56b7f6cd-7ab5-4d0f-a6f6-8e8f95e5f6e2",
+        "price_us_dollars": 450000,
+        "lot_size_acres": 0.1,
+        "house_size_sq_ft": 2000,
+        "bedroom_count": 4,
+        "bathroom_count": 3,
+        "home_description": "This elegant townhouse offers a contemporary urban lifestyle with its open-concept layout and high-end finishes. The living area is designed for comfort and style, featuring a fireplace and large windows. The gourmet kitchen includes a central island, quartz countertops, and high-end appliances. Upstairs, the four spacious bedrooms are equipped with ample closet space and modern finishes. The home includes a finished basement that can be used as a guest suite or media room. The exterior is low-maintenance with a small garden and a private deck. The house exudes sophistication with its sleek design and quality materials.",
+        "best_description": "The gourmet kitchen includes a central island, quartz countertops, and high-end appliances.",
+        "area_description": "Situated in a bustling neighborhood, this townhouse is close to vibrant dining, shopping, and entertainment options. The area is serviced by excellent public schools and offers numerous parks and recreational facilities. With easy access to the city's public transit system and major highways, getting around is convenient and efficient."
+    },
+    {
+        "record_uuid": "1a5d6c7e-4b8e-4569-bd53-9c4d21a5e8f3",
+        "price_us_dollars": 600000,
+        "lot_size_acres": 0.25,
+        "house_size_sq_ft": 3000,
+        "bedroom_count": 5,
+        "bathroom_count": 4,
+        "home_description": "This stunning single-family residence is perfect for large families, featuring an expansive living space with high ceilings and elegant finishes. The gourmet kitchen is a chef's dream, boasting custom cabinetry, a large pantry, and state-of-the-art appliances. Five large bedrooms provide comfort and privacy, with the master suite offering a luxurious en-suite bathroom. The expansive basement is ideal for a home theater or gym. The exterior includes a lush, landscaped garden, a spacious deck, and a three-car garage. The elegant finish throughout the house highlights its quality craftsmanship.",
+        "best_description": "The gourmet kitchen is a chef's dream, boasting custom cabinetry, a large pantry, and state-of-the-art appliances.",
+        "area_description": "Nestled in a prestigious suburban area, this home offers tranquility and convenience. The neighborhood is known for its excellent schools and community spirit. Residents enjoy proximity to upscale shopping centers, fine dining, and cultural attractions. Efficient access to major highways and public transit options makes it ideal for commuting professionals."
+    },
+    {
+        "record_uuid": "c4d6e2f8-a2d4-4e6f-8f1e-3d8f2e3c9f2b",
+        "price_us_dollars": 350000,
+        "lot_size_acres": 0.2,
+        "house_size_sq_ft": 1800,
+        "bedroom_count": 3,
+        "bathroom_count": 2,
+        "home_description": "This inviting condominium offers a blend of style and comfort, with a bright and airy living area featuring floor-to-ceiling windows. The modern kitchen is equipped with sleek appliances, a breakfast bar, and beautiful tile backsplash. The three bedrooms are spacious with large windows and contemporary furnishings. A finished basement provides additional living or storage space. The exterior includes a communal garden and a secure parking space. The condo's modern finish is evident in every detail, making it a perfect urban retreat.",
+        "best_description": "The modern kitchen is equipped with sleek appliances, a breakfast bar, and beautiful tile backsplash.",
+        "area_description": "Located in a vibrant urban district, the condo is surrounded by a rich array of cafes, boutiques, and nightlife. The area is known for its artistic vibe and community events. Public transportation is easily accessible, with several bus and train routes nearby, connecting you effortlessly to the entire city."
+    },
+    {
+        "record_uuid": "a1b2c3d4-e5f6-7890-abcd-ef1234567890",
+        "price_us_dollars": 350000,
+        "lot_size_acres": 0.05,
+        "house_size_sq_ft": 1200,
+        "bedroom_count": 2,
+        "bathroom_count": 2,
+        "home_description": "This charming condo offers an open-concept living area with high ceilings and ample natural light. The modern kitchen features stainless steel appliances, granite countertops, and a breakfast bar. The two spacious bedrooms include large closets, with the master bedroom offering an en-suite bathroom. The unit comes with a fully finished basement, ideal for a home office or rec room. Outside, residents can enjoy a private patio perfect for summer barbecues. The overall finish of the condo is sleek and contemporary, with hardwood flooring throughout.",
+        "best_description": "The modern kitchen features stainless steel appliances, granite countertops, and a breakfast bar.",
+        "area_description": "Located in a vibrant neighborhood, this condo is just steps away from trendy cafes, boutique shops, and a variety of dining options. Families will appreciate the nearby top-rated schools, while commuters will enjoy easy access to major highways and public transportation. The area also boasts several parks and recreational facilities, perfect for outdoor enthusiasts."
+    },
+    {
+        "record_uuid": "a2b2c3d4-e5f6-7890-abcd-ef1234567891",
+        "price_us_dollars": 475000,
+        "lot_size_acres": 0.1,
+        "house_size_sq_ft": 1800,
+        "bedroom_count": 3,
+        "bathroom_count": 2,
+        "home_description": "This lovely townhome is designed for comfort and style, featuring a spacious living area with a cozy fireplace and elegant built-ins. The gourmet kitchen comes equipped with custom cabinetry, marble countertops, and a large pantry. Upstairs, the master suite offers a walk-in closet and a luxurious bathroom with a soaking tub. The basement provides ample storage and a finished area for additional living space. The exterior includes a charming front porch and a landscaped backyard. With top-notch finishes, this townhome is move-in ready.",
+        "best_description": "The gourmet kitchen comes equipped with custom cabinetry, marble countertops, and a large pantry.",
+        "area_description": "Situated in a quiet suburban area, this townhome is close to excellent schools, making it ideal for families. The community is well-connected with public transit and highways for easy commuting. Shopping centers and grocery stores are conveniently nearby, along with a range of dining options. The neighborhood also offers several parks and recreational areas for families to enjoy."
+    },
+    {
+        "record_uuid": "a3b2c3d4-e5f6-7890-abcd-ef1234567892",
+        "price_us_dollars": 625000,
+        "lot_size_acres": 0.2,
+        "house_size_sq_ft": 2500,
+        "bedroom_count": 4,
+        "bathroom_count": 3,
+        "home_description": "This stunning single-family home boasts a grand living room with vaulted ceilings and a wall of windows overlooking the backyard. The chef's kitchen features state-of-the-art appliances, a large island, and an adjacent dining area. The main floor includes a master bedroom with an en-suite bathroom and walk-in closet, plus three additional bedrooms. The fully finished basement includes a family room and a guest suite. The exterior showcases a well-maintained garden, a spacious deck, and a two-car garage. The home's finishes are elegant and timeless, with high-quality materials throughout.",
+        "best_description": "The chef's kitchen features state-of-the-art appliances, a large island, and an adjacent dining area.",
+        "area_description": "Nestled in a family-friendly suburb, this home is within walking distance to top schools and local parks. The area is well-served by public transportation and has quick access to major highways, making commutes a breeze. Residents can enjoy a variety of nearby amenities, including shopping centers, restaurants, and entertainment options. The neighborhood is vibrant yet peaceful, offering a great balance of urban convenience and suburban tranquility."
+    },
+    {
+        "record_uuid": "a4b2c3d4-e5f6-7890-abcd-ef1234567893",
+        "price_us_dollars": 275000,
+        "lot_size_acres": 0.03,
+        "house_size_sq_ft": 950,
+        "bedroom_count": 1,
+        "bathroom_count": 1,
+        "home_description": "This cozy urban condo is perfect for a first-time homebuyer or someone looking to downsize. The living area is bright and airy, with floor-to-ceiling windows offering city views. The kitchen is efficiently designed with modern appliances and sleek cabinetry. The spacious bedroom includes a generous closet, and the bathroom is stylishly appointed with contemporary fixtures. The building offers a shared rooftop terrace with panoramic views of the city. With a freshly painted interior and new carpeting, this condo is ready for its new owner.",
+        "best_description": "The living area is bright and airy, with floor-to-ceiling windows offering city views.",
+        "area_description": "Located in the heart of the city, this condo offers unbeatable access to urban amenities. It's within walking distance to public transportation hubs, making it ideal for commuters. The surrounding area is bustling with shops, cafes, and cultural attractions. Residents can enjoy a vibrant nightlife and a variety of dining options, all just steps from their front door."
+    },
+    {
+        "record_uuid": "a12f7b7e-8f4a-4bce-b2b8-1a8a5e6e1234",
+        "price_us_dollars": 275000,
+        "lot_size_acres": 0.12,
+        "house_size_sq_ft": 1400,
+        "bedroom_count": 3,
+        "bathroom_count": 2,
+        "home_description": "This charming single-family home is nestled in a cozy suburban neighborhood. It features a spacious living area with hardwood floors and large windows that allow natural light to flood in. The kitchen is modern with stainless steel appliances and granite countertops, making it a perfect spot for both cooking and dining. There are three comfortably-sized bedrooms, each with ample closet space, and two well-appointed bathrooms. The basement is partially finished, offering additional living space or storage. The exterior boasts a well-maintained yard with a small garden and a patio area, ideal for outdoor gatherings. The overall finish of the house is modern yet warm, providing a welcoming atmosphere.",
+        "best_description": "A spacious living area with hardwood floors and large windows.",
+        "area_description": "The neighborhood is family-friendly, with several parks and recreational areas nearby. A variety of restaurants and cafes are within walking distance, offering diverse dining options. The area is served by top-rated schools and has easy access to highways and public transportation, making commuting a breeze."
+    },
+    {
+        "record_uuid": "b23e9cde-3f8b-4b7b-8bcd-1e9b6f1e5678",
+        "price_us_dollars": 325000,
+        "lot_size_acres": 0.05,
+        "house_size_sq_ft": 1600,
+        "bedroom_count": 3,
+        "bathroom_count": 2.5,
+        "home_description": "This contemporary townhome offers urban living at its finest, with a spacious open-concept living area perfect for entertaining. The kitchen is equipped with high-end appliances and a large island, ideal for meal preparation and casual dining. Upstairs, you'll find three spacious bedrooms, including a master suite with a luxurious en-suite bathroom. The basement is fully finished and can serve as a home office or entertainment room. The exterior features a small private yard and a deck for outdoor relaxation. The home's sleek design and quality finishes make it both stylish and functional.",
+        "best_description": "A contemporary townhome with a spacious open-concept living area.",
+        "area_description": "Located in a bustling urban area, this townhome is close to shopping centers, cafes, and nightlife. The local schools have a solid reputation, and several parks offer green spaces for outdoor activities. Public transportation is readily accessible, with bus and subway lines within walking distance, making it convenient for commuters."
+    },
+    {
+        "record_uuid": "c34f1cde-5a9c-4b5f-bcde-9e8b7f2e9101",
+        "price_us_dollars": 675000,
+        "lot_size_acres": 0.25,
+        "house_size_sq_ft": 2400,
+        "bedroom_count": 4,
+        "bathroom_count": 3,
+        "home_description": "This expansive single-family home is ideal for families seeking luxury and comfort. The living room features a stunning fireplace and cathedral ceilings, creating a grand atmosphere. The gourmet kitchen is a chef's dream, with custom cabinetry, stone countertops, and a breakfast nook. The four bedrooms include a generous master suite with a walk-in closet and spa-like bathroom. A finished basement provides additional living space, perfect for a home theater or gym. The exterior is equally impressive, with a landscaped garden, a large deck, and a swimming pool. The home's upscale finishes and attention to detail make it a standout property.",
+        "best_description": "An expansive single-family home with a stunning fireplace and cathedral ceilings.",
+        "area_description": "Set in a prestigious suburban neighborhood, the home is close to exclusive shopping centers and gourmet restaurants. The area is served by excellent schools and offers numerous parks and recreational facilities. Major highways and public transit options are easily accessible, ensuring convenient travel to the city center."
+    },
+    {
+        "record_uuid": "d45g2edf-6b8d-5b8c-cefg-0f9b8e3f4321",
+        "price_us_dollars": 495000,
+        "lot_size_acres": 0.08,
+        "house_size_sq_ft": 1800,
+        "bedroom_count": 3,
+        "bathroom_count": 2.5,
+        "home_description": "This stylish condo offers the perfect blend of comfort and convenience. The open-plan living area is bright and airy, with floor-to-ceiling windows providing stunning city views. The kitchen is sleek and modern, with quartz countertops and stainless steel appliances. The condo features three bedrooms, including a master suite with an elegant en-suite bathroom. A half-bath and laundry room add to the condo's practicality. The building offers a fitness center, rooftop terrace, and secure parking. The condo's contemporary design and high-end finishes offer a sophisticated lifestyle.",
+        "best_description": "A stylish condo with an open-plan living area and stunning city views.",
+        "area_description": "Located in the heart of the city, the condo is surrounded by cultural attractions, theaters, and top-rated dining establishments. The area boasts excellent schools and is a hub for business and innovation. Public transportation options are abundant, with bus lines and a metro station just steps away, providing seamless connectivity across the city."
+    },
+    {
+        "record_uuid": "a1f2e3d4-5b6c-7d8e-9f0a-b1c2d3e4f5g6",
+        "price_us_dollars": 250000,
+        "lot_size_acres": 0.08,
+        "house_size_sq_ft": 1200,
+        "bedroom_count": 2,
+        "bathroom_count": 2,
+        "home_description": "This charming condo offers a modern open-concept living area with plenty of natural light. The kitchen is equipped with stainless steel appliances and granite countertops, perfect for cooking enthusiasts. Both bedrooms are spacious, with the master bedroom featuring an ensuite bathroom. The condo also includes a finished basement that can serve as a home office or entertainment room. The exterior boasts a private balcony, ideal for enjoying urban views, and the interior is finished with elegant hardwood floors and contemporary fixtures.",
+        "best_description": "Charming condo with modern open-concept living area.",
+        "area_description": "Located in a vibrant urban neighborhood, this condo is within walking distance of trendy cafes, restaurants, and boutique shops. It is close to top-rated schools, making it ideal for families. The area offers easy access to major highways and public transportation, ensuring convenient commutes to downtown and other parts of the city."
+    },
+    {
+        "record_uuid": "b2c3d4e5-6f7g-8h9i-0a1b-c2d3e4f5g6h7",
+        "price_us_dollars": 400000,
+        "lot_size_acres": 0.12,
+        "house_size_sq_ft": 1800,
+        "bedroom_count": 3,
+        "bathroom_count": 2,
+        "home_description": "This lovely townhome features a spacious living area with a cozy fireplace, perfect for family gatherings. The kitchen is a chef's dream with custom cabinetry and a large island for meal preparation. Upstairs, the three bedrooms offer ample space, with the master suite including a walk-in closet and a luxurious bathroom. The partially finished basement provides additional living space or storage. The exterior is beautifully landscaped, and the home is finished with high-quality materials, including ceramic tiles and plush carpeting.",
+        "best_description": "Lovely townhome with spacious living area and cozy fireplace.",
+        "area_description": "Situated in a suburban community, this townhome is surrounded by parks and recreational facilities. It is conveniently located near shopping centers and reputable schools, making it a desirable location for growing families. Public transportation options and major highways are easily accessible, ensuring smooth commutes to the city center."
+    },
+    {
+        "record_uuid": "c3d4e5f6-7g8h-9i0a-1b2c-d3e4f5g6h7i8",
+        "price_us_dollars": 550000,
+        "lot_size_acres": 0.25,
+        "house_size_sq_ft": 2200,
+        "bedroom_count": 4,
+        "bathroom_count": 3,
+        "home_description": "This beautiful single-family home offers a large open living area with vaulted ceilings and an abundance of natural light. The gourmet kitchen is complete with high-end appliances and a breakfast nook. The four bedrooms are generously sized, with the master suite featuring a spa-like bathroom. A full basement is available, providing additional living space or storage options. The home's exterior includes a spacious backyard with a patio, perfect for outdoor entertaining, and the finishes include hardwood floors and modern light fixtures.",
+        "best_description": "Beautiful single-family home with large open living area and vaulted ceilings.",
+        "area_description": "Located in a peaceful suburban neighborhood, this home is in close proximity to local schools and community parks. It is minutes away from a variety of shopping and dining options. The area has excellent access to public transportation and major roadways, providing quick commutes to the downtown area and surrounding suburbs."
+    },
+    {
+        "record_uuid": "d4e5f6g7-8h9i-0a1b-2c3d-e4f5g6h7i8j9",
+        "price_us_dollars": 700000,
+        "lot_size_acres": 0.35,
+        "house_size_sq_ft": 3000,
+        "bedroom_count": 5,
+        "bathroom_count": 4,
+        "home_description": "This stunning single-family home features an expansive living area with a grand staircase and large windows. The gourmet kitchen includes a massive island, custom cabinetry, and top-of-the-line appliances. The five bedrooms offer plenty of space, with the master suite providing a luxurious retreat with its own sitting area and spa-like bathroom. The full basement is finished and can be used as a game room or additional living space. The home's exterior includes a beautifully manicured lawn and a large deck, ideal for entertaining guests, with finishes that include elegant crown molding and hardwood floors throughout.",
+        "best_description": "Stunning single-family home with expansive living area and grand staircase.",
+        "area_description": "Nestled in an affluent suburban community, this home is surrounded by upscale shopping and dining establishments. It is located near top-rated private and public schools. The neighborhood offers convenient access to major highways and public transit routes, ensuring a quick and easy commute to the city center and other areas."
+    }
+]
