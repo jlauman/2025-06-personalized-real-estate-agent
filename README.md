@@ -1,4 +1,6 @@
 # Personalized Real Estate Agent Project
+The `listings.html` file contains representative output for LLM personalized
+real estate descriptions.
 
 ## Environment Set Up
 ```
