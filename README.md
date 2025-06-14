@@ -9,5 +9,5 @@ source venv/bin/activate
 
 pip install -r requirements.txt
 
-jupyter lab --browser=chrome --notebook-dir=./notebooks
+jupyter lab --browser=chrome --notebook-dir=.
 ```

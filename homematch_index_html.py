@@ -2,7 +2,7 @@ import json
 import base64
 
 
-def page_html(homes: list[dict]):
+def page_html(homes: list[dict], images: dict[str, str]):
     return f"""
 <!DOCTYPE html>
 <html lang="en">
@@ -15,7 +15,7 @@ def page_html(homes: list[dict]):
   <body>
     <table>
         <tbody>
-        {''.join(home_html(home) for home in homes)}
+        {''.join(home_html(home, images[home['record_uuid']]) for home in homes)}
         </tbody>
     </table>
   </body>
@@ -23,10 +23,10 @@ def page_html(homes: list[dict]):
     """
 
 
-def home_html(home: dict):
+def home_html(home: dict, data_url: str):
     return f"""
         <tr>
-            <td><img src="{home['data_url']}" width="512"/></td>
+            <td><img src="{data_url}" width="512"/></td>
             <td>
                 <table>
                     <tbody>
@@ -47,18 +47,25 @@ def home_html(home: dict):
     """
 
 
+def get_data_urls(record_uuids: list[str]) -> dict:
+    images = {}
+    for record_uuid in record_uuids:
+        with open(f"listing_images/{record_uuid}.jpg", "rb") as image:
+            image_base64 = base64.b64encode(image.read()).decode("ascii")
+        data_url = f"data:image/jpeg;base64,{image_base64}"
+        images[record_uuid] = data_url
+    return images
+
+
 def main():
     homes = []
     with open("listings.json", "r") as file:
         homes = json.load(file)
 
-    for home in homes:
-        with open(f"listing_images/{home['record_uuid']}.jpg", "rb") as image:
-            image_base64 = base64.b64encode(image.read()).decode("ascii")
-        data_url = f"data:image/jpeg;base64,{image_base64}"
-        home["data_url"] = data_url
+    record_uuids = [x["record_uuid"] for x in homes]
+    images = get_data_urls(record_uuids)
 
-    html = page_html(homes)
+    html = page_html(homes, images)
     with open("index.html", "w") as file:
         print(html, file=file)
 

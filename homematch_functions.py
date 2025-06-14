@@ -7,9 +7,9 @@ from langchain_openai import ChatOpenAI
 from langchain_community.document_loaders import JSONLoader
 from langchain.text_splitter import CharacterTextSplitter
 from langchain_community.vectorstores import Chroma
-from langchain.prompts import PromptTemplate
-from langchain.chains.question_answering import load_qa_chain
-# from langchain_core.prompts import ChatPromptTemplate
+# from langchain.prompts import PromptTemplate
+# from langchain.chains.question_answering import load_qa_chain
+from langchain_core.prompts import ChatPromptTemplate
 from langchain_core.documents import Document
 
 
@@ -66,7 +66,7 @@ def build_similar_documents(vector_db, answers: list[str]) -> dict[str, set]:
     documents = dict()
     for index, answer in enumerate(answers):
         # similar_documents = vector_db.similarity_search(answer, k=3)
-        similar_documents = vector_db.similarity_search_with_relevance_scores(answer, k=10)
+        similar_documents = vector_db.similarity_search_with_relevance_scores(answer, k=5)
         for document, score in similar_documents:
             if score >= SIMILARITY_SCORE_MINIMUM:
                 record_uuid = document.metadata["record_uuid"]
@@ -76,28 +76,44 @@ def build_similar_documents(vector_db, answers: list[str]) -> dict[str, set]:
     return documents
 
 
-def filter_similar_documents(documents: dict[str, set], min_matches: int) -> dict[str, set]:
+def filter_similar_documents(documents: dict[str, set], min_matches: int) -> dict[str, set[int]]:
     filtered_documents = {k:v for k, v in documents.items() if len(v) >= min_matches}
     return filtered_documents
 
 
-# def something():
-#     llm = ChatOpenAI(
-#         model="gpt-4o", 
-#         temperature=0.25, 
-#         max_completion_tokens=2000
-#     )
-#     query = "moderately priced urban bungalow"
-#     similar_documents = db.similarity_search(query, k=3)
-#     prompt = PromptTemplate(
-#         template="Return one or more document ID values as a JSON list of strings for the question: {query}\nContext: {context}",
-#         input_variables=["query", "context"],
-#     )
+def personalize_listing(listing: str, answers: list[str]):
+    llm = ChatOpenAI(
+        model="gpt-4o", 
+        temperature=0.25, 
+        max_completion_tokens=2000,
+        max_retries=2,
+    )
 
-#     chain = load_qa_chain(llm, prompt=prompt, chain_type="stuff")
-#     result = chain.invoke(input={"input_documents": similar_documents, "query": query})
-#     print(result)
-#     # print(json.loads(result))
+    prompt = ChatPromptTemplate.from_messages([
+        ("system", "You are a helpful and knowledgeable real estate agent."),
+        ("human", """
+            Generate a description of the real estate listing (below as "Real Estate Listing") 
+            that personalizes the listing for the customer based on their search criteria
+            (below as "Search Criteria"). Parse the real estate listing as a JSON document.
+            When generating the personalized description retain the factual information from the
+            real estate listing. Do not use the term "search criteria" in the description.
+         
+            Real Estate Listing:
+            {listing}
+         
+            Search Criteria:
+            {answers}
+         """),
+    ])
+
+    chain = prompt | llm
+    result = chain.invoke({
+        "listing": listing,
+        "answers": "\n".join(answers),
+    })
+    if result.content:
+        return result.content
+    return "Personalized descripton is not available."
 
 
 def main():
@@ -126,15 +142,31 @@ def main():
     ]
 
     documents = load_documents()
-    documents_by_uuid = {doc.metadata["record_uuid"]:json.loads(doc.page_content) for doc in documents}
+    documents_by_uuid: dict[str, str] = {
+        doc.metadata["record_uuid"]:doc.page_content for doc in documents
+    }
 
     vector_db = load_vector_db(documents)
 
-    similar_documents = build_similar_documents(vector_db, answers)
-    filtered_documents = filter_similar_documents(similar_documents, 3)
+    similar_documents_ids = build_similar_documents(vector_db, answers)
+    filtered_documents_ids = filter_similar_documents(similar_documents_ids, 3)
 
-    from pprint import pprint
-    pprint(filtered_documents)
+    print("=======================================")
+    print(filtered_documents_ids)
+
+    personalized_descriptions = {}
+    for record_uuid, answer_indexes in filtered_documents_ids.items():
+        listing = documents_by_uuid[record_uuid]
+        filtered_answers = [answers[i] for i in answer_indexes]
+        result = personalize_listing(listing, filtered_answers)
+        personalized_descriptions[record_uuid] = {
+            "record_uuid": record_uuid,
+            "filtered_answers": filtered_answers,
+            "description": result,
+        }
+
+    print("----------------------------------------")
+    print(personalized_descriptions)
 
 
 if __name__ == "__main__":
