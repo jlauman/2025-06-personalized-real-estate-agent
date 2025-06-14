@@ -17,7 +17,7 @@ from langchain_core.documents import Document
 OPENAI_API_KEY = os.getenv("OPENAI_API_KEY")
 assert OPENAI_API_KEY and len(OPENAI_API_KEY) > 32
 
-
+SIMILARITY_K = 5
 SIMILARITY_SCORE_MINIMUM = 0.1
 
 
@@ -62,13 +62,19 @@ def load_vector_db(documents: list[Document]):
     return vector_db
 
 
-def build_similar_documents(vector_db, answers: list[str]) -> dict[str, set]:
+def build_similar_documents(
+    vector_db, 
+    answers: list[str],
+    *,
+    minimum_count=SIMILARITY_K,
+    minimum_score=SIMILARITY_SCORE_MINIMUM,
+) -> dict[str, set]:
     documents = dict()
     for index, answer in enumerate(answers):
         # similar_documents = vector_db.similarity_search(answer, k=3)
-        similar_documents = vector_db.similarity_search_with_relevance_scores(answer, k=5)
+        similar_documents = vector_db.similarity_search_with_relevance_scores(answer, k=minimum_count)
         for document, score in similar_documents:
-            if score >= SIMILARITY_SCORE_MINIMUM:
+            if score >= minimum_score:
                 record_uuid = document.metadata["record_uuid"]
                 if not record_uuid in documents:
                     documents[record_uuid] = set()
@@ -76,8 +82,12 @@ def build_similar_documents(vector_db, answers: list[str]) -> dict[str, set]:
     return documents
 
 
-def filter_similar_documents(documents: dict[str, set], min_matches: int) -> dict[str, set[int]]:
-    filtered_documents = {k:v for k, v in documents.items() if len(v) >= min_matches}
+def filter_similar_documents(
+    documents: dict[str, set],
+    *,
+    minimum_matches: int
+) -> dict[str, set[int]]:
+    filtered_documents = {k:v for k, v in documents.items() if len(v) >= minimum_matches}
     return filtered_documents
 
 
@@ -96,7 +106,8 @@ def personalize_listing(listing: str, answers: list[str]):
             that personalizes the listing for the customer based on their search criteria
             (below as "Search Criteria"). Parse the real estate listing as a JSON document.
             When generating the personalized description retain the factual information from the
-            real estate listing. Do not use the term "search criteria" in the description.
+            real estate listing. Always include the price, number of bedrooms, and number of bathrooms.
+            Do not use the term "search criteria" in the description.
          
             Real Estate Listing:
             {listing}
@@ -148,8 +159,8 @@ def main():
 
     vector_db = load_vector_db(documents)
 
-    similar_documents_ids = build_similar_documents(vector_db, answers)
-    filtered_documents_ids = filter_similar_documents(similar_documents_ids, 3)
+    similar_documents_ids = build_similar_documents(vector_db, answers, minimum_count=3, minimum_score=0.1)
+    filtered_documents_ids = filter_similar_documents(similar_documents_ids, minimum_matches=3)
 
     print("=======================================")
     print(filtered_documents_ids)
